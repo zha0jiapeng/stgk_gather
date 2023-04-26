@@ -54,33 +54,32 @@ public class VoltageCabinetMonitor implements Serializable {
     @ApiModelProperty("pd")
     private BigDecimal pd;
 
-    @ApiModelProperty("断路器上口A相温度")
-    private BigDecimal breakerUpAcurrent;
+    /** 断路器上口A相温度 */
+    private BigDecimal breakerUpATemperature;
 
-    @ApiModelProperty("断路器上口B相温度")
-    private BigDecimal breakerUpBcurrent;
+    /** 断路器上口B相温度 */
+    private BigDecimal breakerUpBTemperature;
 
-    @ApiModelProperty("断路器上口C相温度")
-    private BigDecimal breakerUpCcurrent;
+    /** 断路器上口C相温度 */
+    private BigDecimal breakerUpCTemperature;
 
-    @ApiModelProperty("断路器下口A相温度")
-    private BigDecimal breakerDownAcurrent;
+    /** 断路器下口A相温度 */
+    private BigDecimal breakerDownATemperature;
 
-    @ApiModelProperty("断路器下口B相温度")
-    private BigDecimal breakerDownBcurrent;
+    /** 断路器下口B相温度 */
+    private BigDecimal breakerDownBTemperature;
 
-    @ApiModelProperty("断路器下口C相温度")
-    private BigDecimal breakerDownCcurrent;
+    /** 断路器下口C相温度 */
+    private BigDecimal breakerDownCTemperature;
 
-    @ApiModelProperty("断路器出口A相温度")
-    private BigDecimal breakerOutAcurrent;
+    /** 断路器出口A相温度 */
+    private BigDecimal breakerOutATemperature;
 
-    @ApiModelProperty("断路器出口B相温度")
-    private BigDecimal breakerOutBcurrent;
+    /** 断路器出口B相温度 */
+    private BigDecimal breakerOutBTemperature;
 
-    @ApiModelProperty("断路器出口C相温度")
-    private BigDecimal breakerOutCcurrent;
-
+    /** 断路器出口C相温度 */
+    private BigDecimal breakerOutCTemperature;
     @ApiModelProperty("合闸线圈电流")
     private BigDecimal closingCoilCurrent;
 
@@ -169,69 +168,79 @@ public class VoltageCabinetMonitor implements Serializable {
     public void setPd(BigDecimal pd) {
         this.pd = pd;
     }
-    public BigDecimal getBreakerUpAcurrent() {
-        return breakerUpAcurrent;
+
+    public BigDecimal getBreakerUpATemperature() {
+        return breakerUpATemperature;
     }
 
-    public void setBreakerUpAcurrent(BigDecimal breakerUpAcurrent) {
-        this.breakerUpAcurrent = breakerUpAcurrent;
-    }
-    public BigDecimal getBreakerUpBcurrent() {
-        return breakerUpBcurrent;
+    public void setBreakerUpATemperature(BigDecimal breakerUpATemperature) {
+        this.breakerUpATemperature = breakerUpATemperature;
     }
 
-    public void setBreakerUpBcurrent(BigDecimal breakerUpBcurrent) {
-        this.breakerUpBcurrent = breakerUpBcurrent;
-    }
-    public BigDecimal getBreakerUpCcurrent() {
-        return breakerUpCcurrent;
+    public BigDecimal getBreakerUpBTemperature() {
+        return breakerUpBTemperature;
     }
 
-    public void setBreakerUpCcurrent(BigDecimal breakerUpCcurrent) {
-        this.breakerUpCcurrent = breakerUpCcurrent;
-    }
-    public BigDecimal getBreakerDownAcurrent() {
-        return breakerDownAcurrent;
+    public void setBreakerUpBTemperature(BigDecimal breakerUpBTemperature) {
+        this.breakerUpBTemperature = breakerUpBTemperature;
     }
 
-    public void setBreakerDownAcurrent(BigDecimal breakerDownAcurrent) {
-        this.breakerDownAcurrent = breakerDownAcurrent;
-    }
-    public BigDecimal getBreakerDownBcurrent() {
-        return breakerDownBcurrent;
+    public BigDecimal getBreakerUpCTemperature() {
+        return breakerUpCTemperature;
     }
 
-    public void setBreakerDownBcurrent(BigDecimal breakerDownBcurrent) {
-        this.breakerDownBcurrent = breakerDownBcurrent;
-    }
-    public BigDecimal getBreakerDownCcurrent() {
-        return breakerDownCcurrent;
+    public void setBreakerUpCTemperature(BigDecimal breakerUpCTemperature) {
+        this.breakerUpCTemperature = breakerUpCTemperature;
     }
 
-    public void setBreakerDownCcurrent(BigDecimal breakerDownCcurrent) {
-        this.breakerDownCcurrent = breakerDownCcurrent;
-    }
-    public BigDecimal getBreakerOutAcurrent() {
-        return breakerOutAcurrent;
+    public BigDecimal getBreakerDownATemperature() {
+        return breakerDownATemperature;
     }
 
-    public void setBreakerOutAcurrent(BigDecimal breakerOutAcurrent) {
-        this.breakerOutAcurrent = breakerOutAcurrent;
-    }
-    public BigDecimal getBreakerOutBcurrent() {
-        return breakerOutBcurrent;
+    public void setBreakerDownATemperature(BigDecimal breakerDownATemperature) {
+        this.breakerDownATemperature = breakerDownATemperature;
     }
 
-    public void setBreakerOutBcurrent(BigDecimal breakerOutBcurrent) {
-        this.breakerOutBcurrent = breakerOutBcurrent;
-    }
-    public BigDecimal getBreakerOutCcurrent() {
-        return breakerOutCcurrent;
+    public BigDecimal getBreakerDownBTemperature() {
+        return breakerDownBTemperature;
     }
 
-    public void setBreakerOutCcurrent(BigDecimal breakerOutCcurrent) {
-        this.breakerOutCcurrent = breakerOutCcurrent;
+    public void setBreakerDownBTemperature(BigDecimal breakerDownBTemperature) {
+        this.breakerDownBTemperature = breakerDownBTemperature;
     }
+
+    public BigDecimal getBreakerDownCTemperature() {
+        return breakerDownCTemperature;
+    }
+
+    public void setBreakerDownCTemperature(BigDecimal breakerDownCTemperature) {
+        this.breakerDownCTemperature = breakerDownCTemperature;
+    }
+
+    public BigDecimal getBreakerOutATemperature() {
+        return breakerOutATemperature;
+    }
+
+    public void setBreakerOutATemperature(BigDecimal breakerOutATemperature) {
+        this.breakerOutATemperature = breakerOutATemperature;
+    }
+
+    public BigDecimal getBreakerOutBTemperature() {
+        return breakerOutBTemperature;
+    }
+
+    public void setBreakerOutBTemperature(BigDecimal breakerOutBTemperature) {
+        this.breakerOutBTemperature = breakerOutBTemperature;
+    }
+
+    public BigDecimal getBreakerOutCTemperature() {
+        return breakerOutCTemperature;
+    }
+
+    public void setBreakerOutCTemperature(BigDecimal breakerOutCTemperature) {
+        this.breakerOutCTemperature = breakerOutCTemperature;
+    }
+
     public BigDecimal getClosingCoilCurrent() {
         return closingCoilCurrent;
     }
@@ -288,15 +297,6 @@ public class VoltageCabinetMonitor implements Serializable {
             ", cos=" + cos +
             ", rh=" + rh +
             ", pd=" + pd +
-            ", breakerUpAcurrent=" + breakerUpAcurrent +
-            ", breakerUpBcurrent=" + breakerUpBcurrent +
-            ", breakerUpCcurrent=" + breakerUpCcurrent +
-            ", breakerDownAcurrent=" + breakerDownAcurrent +
-            ", breakerDownBcurrent=" + breakerDownBcurrent +
-            ", breakerDownCcurrent=" + breakerDownCcurrent +
-            ", breakerOutAcurrent=" + breakerOutAcurrent +
-            ", breakerOutBcurrent=" + breakerOutBcurrent +
-            ", breakerOutCcurrent=" + breakerOutCcurrent +
             ", closingCoilCurrent=" + closingCoilCurrent +
             ", openingCoilCurrent=" + openingCoilCurrent +
             ", storageMotorCurrent=" + storageMotorCurrent +

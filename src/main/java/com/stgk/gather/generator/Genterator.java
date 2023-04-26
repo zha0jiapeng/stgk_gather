@@ -26,7 +26,7 @@ public class Genterator{
                                 .pathInfo(Collections.singletonMap(OutputFile.xml, url + "resources/mapper")); // 设置mapperXml生成路径
                     })
                     .strategyConfig(builder -> {
-                        builder.addInclude("stgk_voltage_cabinet") // 设置需要生成的表名
+                        builder.addInclude("stgk_room") // 设置需要生成的表名
                                 .addTablePrefix("stgk_"); // 设置过滤表前缀
 
                     })

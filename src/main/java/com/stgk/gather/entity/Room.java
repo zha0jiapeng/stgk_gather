@@ -14,7 +14,7 @@ import io.swagger.annotations.ApiModelProperty;
  * </p>
  *
  * @author mashir0zhao
- * @since 2023-04-19
+ * @since 2023-04-24
  */
 @TableName("stgk_room")
 @ApiModel(value = "Room对象", description = "")
@@ -28,6 +28,15 @@ public class Room implements Serializable {
 
     @ApiModelProperty("配电室名称")
     private String roomName;
+
+    @ApiModelProperty("备注")
+    private String remark;
+
+    @ApiModelProperty("从机地址")
+    private Integer slaveId;
+
+    @ApiModelProperty("摄像头ip地址 多个以逗号分割")
+    private String cameraIps;
 
     @ApiModelProperty("创建时间")
     private LocalDateTime createTime;
@@ -54,6 +63,27 @@ public class Room implements Serializable {
 
     public void setRoomName(String roomName) {
         this.roomName = roomName;
+    }
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+    public Integer getSlaveId() {
+        return slaveId;
+    }
+
+    public void setSlaveId(Integer slaveId) {
+        this.slaveId = slaveId;
+    }
+    public String getCameraIps() {
+        return cameraIps;
+    }
+
+    public void setCameraIps(String cameraIps) {
+        this.cameraIps = cameraIps;
     }
     public LocalDateTime getCreateTime() {
         return createTime;
@@ -89,6 +119,9 @@ public class Room implements Serializable {
         return "Room{" +
             "id=" + id +
             ", roomName=" + roomName +
+            ", remark=" + remark +
+            ", slaveId=" + slaveId +
+            ", cameraIps=" + cameraIps +
             ", createTime=" + createTime +
             ", createBy=" + createBy +
             ", updateTime=" + updateTime +

@@ -1,6 +1,6 @@
 package com.stgk.gather.service;
 
-import com.stgk.gather.entity.Room;
+import com.stgk.gather.entity.RoomMonitor;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author mashir0zhao
  * @since 2023-04-24
  */
-public interface IRoomService extends IService<Room> {
+public interface IRoomMonitorService extends IService<RoomMonitor> {
 
 }

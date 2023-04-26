@@ -49,7 +49,7 @@ public class TransformerScheduled {
      * 1.温度 目前模拟传感器之间500m 0-199为温度 200-399为电流值
      * 2.电流 同一时刻电流值恒定 取一个就可
      */
-    @Scheduled(cron ="0 0/1 * * * ?")
+    //@Scheduled(cron ="0 0/1 * * * ?")
     private void transformer() {
         LocalDateTime now = LocalDateTime.now().withSecond(0).withNano(0);
         System.out.println("变压器信息入库：" + now);

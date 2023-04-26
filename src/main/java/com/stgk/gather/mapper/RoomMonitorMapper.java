@@ -1,6 +1,6 @@
 package com.stgk.gather.mapper;
 
-import com.stgk.gather.entity.Room;
+import com.stgk.gather.entity.RoomMonitor;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author mashir0zhao
  * @since 2023-04-24
  */
-public interface RoomMapper extends BaseMapper<Room> {
+public interface RoomMonitorMapper extends BaseMapper<RoomMonitor> {
 
 }
