@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author mashir0zhao
- * @since 2023-04-20
+ * @since 2023-04-27
  */
 @Service
 public class VoltageCabinetMonitorServiceImpl extends ServiceImpl<VoltageCabinetMonitorMapper, VoltageCabinetMonitor> implements IVoltageCabinetMonitorService {

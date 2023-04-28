@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author mashir0zhao
- * @since 2023-04-20
+ * @since 2023-04-27
  */
 public interface VoltageCabinetMonitorMapper extends BaseMapper<VoltageCabinetMonitor> {
 

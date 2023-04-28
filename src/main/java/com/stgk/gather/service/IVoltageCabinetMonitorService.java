@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author mashir0zhao
- * @since 2023-04-20
+ * @since 2023-04-27
  */
 public interface IVoltageCabinetMonitorService extends IService<VoltageCabinetMonitor> {
 

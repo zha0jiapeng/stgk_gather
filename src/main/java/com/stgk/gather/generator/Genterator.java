@@ -19,18 +19,21 @@ public class Genterator{
                                 .fileOverride() // 覆盖已生成文件
                                 .disableOpenDir()
                                 .outputDir(url + "java"); // 指定输出目录
+
                     })
                     .packageConfig(builder -> {
                         builder.parent("com.stgk.gather") // 设置父包名
                                 .moduleName("") // 设置父包模块名
                                 .pathInfo(Collections.singletonMap(OutputFile.xml, url + "resources/mapper")); // 设置mapperXml生成路径
+
                     })
                     .strategyConfig(builder -> {
-                        builder.addInclude("stgk_room") // 设置需要生成的表名
+                        builder.addInclude("stgk_voltage_cabinet_monitor") // 设置需要生成的表名
                                 .addTablePrefix("stgk_"); // 设置过滤表前缀
 
                     })
                     .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
+
                     .execute();
         }
 }
